@@ -31,3 +31,16 @@ then
 else
 	echo "no"
 fi
+
+echo "*********************************"
+
+read -p "enter mobile number:" mobilenumber
+mobileformat="^91 [6-9]{1}[0-9]{9}$"
+if(( $mobilenumber == $mobileformat ))
+then
+	echo "yes"
+else
+	echo "no"
+fi
+
+
